@@ -1,5 +1,6 @@
 import os
 import random
+import matplotlib 
 
 try:
     os.mkdir('teste')
@@ -9,7 +10,7 @@ except:
 os.chdir(os.getcwd() + '/teste')
 
 for i in range(10):
-    with open(random.choice(('teste-', 'testando-', 'nome-', 'arquivo-')) + str(random.randint(1, 10)) + '.txt', 'w') as f:
+    with open(random.choice(('teste-', 'testando-', 'nome-', 'arquivo-')) + str(random.randint(1, 10)) + '.txt', 'a') as f:
         f.write('Rafael')
 
 for f in os.listdir():
