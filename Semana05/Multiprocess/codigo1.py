@@ -11,7 +11,7 @@ def multriprocess_on():
 
     t1 = time.perf_counter()
 
-    processes = [multiprocessing.Process(target=delay, args=[1]) for _ in range(10)]
+    processes = [multiprocessing.Process(target=delay, args=[i]) for i in range(10)]
 
     for process in processes:
         process.start()
