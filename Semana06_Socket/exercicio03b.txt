@@ -1,0 +1,7 @@
+1)  TCP: 1460 bytes
+    UDP: 65507 bytes
+
+2)  através do protocolo FTP.
+
+3)  o TCP realiza a conexão com o cliente e transfere arquvos de forma segura. O UDP não realiza a conexão
+com o cliente, apenas se conecta e transmite os dados.
