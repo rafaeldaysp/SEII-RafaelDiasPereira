@@ -1,6 +1,6 @@
 import socket      #   importa a biblioteca socket
 
-TCP_IP = "127.0.0.1"    #   inicializa a variável host
+TCP_IP = "127.0.0.1"    #   define a variável host
 FILE_PORT = 5005        #   especifica a porta para o nome do arquivo
 DATA_PORT = 5006        #   especifica a porta para os dados do arquivo
 timeout = 3             #   cria uma variável aleatória que não é utilizada
