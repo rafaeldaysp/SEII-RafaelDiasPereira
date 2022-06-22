@@ -1,0 +1,144 @@
+BoxLayout:
+    canvas:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+            source: 'images/marin.png'
+    orientation:'vertical'
+    AppBar:
+    Menu:
+    ScrollView:
+        BoxLayout:
+            size_hint_y:None
+            height:self.minimum_height
+            orientation:'vertical'
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Widget:
+
+
+<AppBar@BoxLayout>:
+    padding:'5dp'
+    canvas:
+        Color:
+            rgba:0.5,0,1,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    size_hint_y:None
+    height:'50dp'
+    Label:
+        text:'zap zap do rafael'
+        bold:True
+        font_size:'20dp'
+        haling:'left'
+        text_size:self.size
+        valign:'center'
+        padding_x:'10dp'
+    Icon:
+        background_normal:'images/lupa.png'
+        active:True
+    Icon:
+        background_normal:'images/pontinhos.png'
+        active:True
+
+<Foto@Widget>:
+    canvas:
+        Color:
+            rgba:1,1,1,1
+        Ellipse:
+            source:'images/miyamura.png'
+            size:self.size
+            pos:self.pos
+    size_hint_x:None
+    width:self.height
+
+<Chat@BoxLayout>:
+    canvas:
+        Color:
+            rgba:0,0,0,0.4
+        Line:
+            width:1
+            points:self.x+self.height,self.y,self.x+self.width-20,self.y
+    size_hint_y:None
+    height:'100dp'
+    padding:'10dp'
+    Foto:
+    BoxLayout:
+        orientation:'vertical'
+        padding:'10dp'
+        Label:
+            text:'Rafael'
+            font_size:'30dp'
+            bold:True
+            color:(0,0,0,1)
+            text_size:self.size
+            halign:'left'
+            valign:'center'
+        Label:
+            text:'Mensagem'
+            font_size:'30dp'
+            color:(0,0,0,0.8)
+            text_size:self.size
+            halign:'left'
+            valign:'center'
+    BoxLayout:
+        size_hint_x:None
+        width:'100dp'
+        padding:'7dp'
+        Label:
+            text:'23:01'
+            color:(0,0,0,0.8)
+            text_size:self.size
+            font_size:'25dp'
+            valign:'top' 
+            halign:'right'
+
+<Menu@BoxLayout>:
+    canvas:
+        Color:
+            rgba:0.5,0,1,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    size_hint_y:None
+    height:'35dp'
+    padding:'4dp'
+    spacing:'8dp'
+    Icon:
+        background_normal:'images/camera.png'
+    MenuButton:
+        text:'CONVERSAS'
+        active:True
+    MenuButton:
+        text: 'STATUS'
+    MenuButton:
+        text: 'CHAMADAS'
+    
+<MenuButton@Button>:
+    active: False
+    canvas:
+        Color:
+            rgba:1,1,1,1
+        Line:
+            width: 3 if root.active else 0.1
+            points:self.x, self.y, self.x+self.width, self.y
+    background_color:0,0,0,0
+    bold:True
+    color:(1,1,1,1) if root.active else (1,1,1,0.8)
+
+<Icon@Button>:
+    active:False
+    size_hint_x:None
+    width:self.height
+    border: 0,0,0,0
+    background_color: (1,1,1,1) if root.active else (1,1,1,0.8)
+    
