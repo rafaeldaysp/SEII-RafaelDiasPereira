@@ -9,8 +9,11 @@ function apagar(){
 }
 
 function calcular(){
-    resultado = eval(visor)
-    window.document.calc.visor.value = resultado
+    if (window.document.calc.visor.value != ""){
+        resultado = eval(visor)
+        window.document.calc.visor.value = resultado
+    }
+    
 }
 
 function ans(){
