@@ -1,0 +1,89 @@
+#title{
+    text-align: center;
+    color: white;
+    font-family: sans-serif
+}
+
+html {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('../Images/sao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid rgb(255, 245, 53);
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+}
+
+th {
+    
+    height: 30px;
+}
+
+td {
+    
+    text-align: center;
+    padding: 5px;
+}
+
+
+.form {
+    margin-top: 20px;
+    
+}
+
+#content {
+    width: 60%;
+    
+}
+
+#content, #button {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#button, #tablerow {
+    font-size: 1.2em;
+    background-color: blueviolet;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    
+}
+
+#button:hover, #tablerow:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+#options:hover {
+    background: #454242;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+#button {
+    cursor: pointer;
+}
+
