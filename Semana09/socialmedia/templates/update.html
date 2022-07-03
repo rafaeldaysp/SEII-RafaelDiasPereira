@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Rafael Days - Atualizar Post</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <p></p>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center mb-3">
+        <div class="card text-bg-dark mb-3" style="max-width: 720px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../static/Images/kitagawa.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{post[0][1]}}</h5>
+                    <p>
+                        <form class="row g-3" action="/update/{{post[0][0]}}" method="POST">
+                            <div class="col-auto" style="display: flex">
+                                <textarea class="form-control" rows="3" placeholder="Diga o que está pensando..." name="content"></textarea>
+                                
+                            </div>
+                            <div class="col-auto justify-content-end">
+                                <input class="btn btn-success" type="submit" value="Confirmar" id="submit_button">
+                            </div>
+                        </form> 
+                    </p>
+                    <p class="card-text"><small>Enviado em {{post[0][3]}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+    
+
+
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Rafael Days</title>
+
+{% endblock %}
+
+{% block body %}
+
+
+
+<div class="container mt-4 mb-3 rounded bg-dark" id="post_area" style="max-width: 720px;">
+    <div class="row justify-content-center">
+        <p>
+            <button class="btn btn-primary btn-block mt-2" type="button" id="botao_postar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Criar um post
+            </button>
+        </p>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <div class="row justify-content-center"> 
+            <div class="col-6">
+                <form class="mb-3" action="/" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Usuário</label>
+                        <input class="form-control" placeholder="Insira seu nome" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Post</label>
+                        <textarea class="form-control" rows="5"  placeholder="Diga o que você está pensando..." name="post"></textarea>
+                    </div>
+                    <input id="botao_postar" class="btn btn-success btn-block" type="submit" value="Postar" id="submit_button">
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% for post in posts %}
+<div class="container">
+    <div class="row justify-content-center mb-3">
+        <div class="card text-bg-dark mb-3" style="max-width: 720px;" id="post_area">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../static/Images/kitagawa.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">{{post[1]}}</h5>
+                    <p class="card-text">{{post[2]}}</p>
+                    <p class="card-text"><small>Enviado em {{post[3]}}</small></p>
+                    <a class="btn btn-danger" role="button" id="delete_button" href="/delete/{{post[0]}}">Apagar</a>
+                    <a class="btn btn-primary" role="button" id="update_button" href="/update/{{post[0]}}">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+{% endfor %}
+    
+
+
+{% endblock %}
