@@ -14,5 +14,29 @@ body{
     background-repeat: no-repeat;
 }
 
+#post_area, #post, #nav_area, #update_post {
+    background: linear-gradient(40deg, rgb(209, 245, 68), rgb(57, 0, 110))
+}
+
+#botao_criar{
+    font-size: 1.2em;
+    background-color: blueviolet;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+#botao_criar:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+
 
 

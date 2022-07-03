@@ -10,10 +10,10 @@
 
 
 
-<div class="container mt-4 mb-3 rounded bg-dark" id="post_area" style="max-width: 720px;">
+<div class="container mt-4 mb-3 rounded" id="post_area" style="max-width: 720px;">
     <div class="row justify-content-center">
         <p>
-            <button class="btn btn-primary btn-block mt-2" type="button" id="botao_postar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <button class="btn btn-primary btn-block mt-2" type="button" id="botao_criar" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseWidthExample">
                 Criar um post
             </button>
         </p>
@@ -41,10 +41,10 @@
 {% for post in posts %}
 <div class="container">
     <div class="row justify-content-center mb-3">
-        <div class="card text-bg-dark mb-3" style="max-width: 720px;" id="post_area">
+        <div class="card mb-3" style="max-width: 720px;" id="post_area">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../static/Images/kitagawa.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="../static/Images/kitagawa.jpg" class="img-fluid rounded-circle" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
