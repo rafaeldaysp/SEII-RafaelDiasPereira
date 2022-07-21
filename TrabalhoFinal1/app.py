@@ -1,6 +1,6 @@
 import pygame, controle, elements
 
-WIDTH, HEIGHT = 1250, 700
+WIDTH, HEIGHT = 1200, 720
 
 NAME_WINDOW = 'Aeropêndulo'
 
@@ -8,7 +8,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption(NAME_WINDOW)
 
 BACKGROUND = pygame.transform.scale(
-    pygame.image.load('Images/marin.png'), (WIDTH, HEIGHT) 
+    pygame.image.load('Images/background2.jpg'), (WIDTH, HEIGHT) 
 )
 
 BUTTON_DIMENTIONS = (250, 100)
